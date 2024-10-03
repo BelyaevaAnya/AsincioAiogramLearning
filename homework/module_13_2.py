@@ -4,12 +4,8 @@ from aiogram.types import Message
 from aiogram.filters import Command
 import asyncio
 
-# Вставьте ваш токен бота ниже
-<<<<<<< HEAD
+
 API_TOKEN = 'токен'
-=======
-API_TOKEN = 'token'
->>>>>>> 247cdb473f6ce7d13ec04d9db67bf8d1d08e9914
 
 # Настроим логирование
 logging.basicConfig(level=logging.INFO)
