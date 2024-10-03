@@ -5,7 +5,11 @@ from aiogram.filters import Command
 import asyncio
 
 # Вставьте ваш токен бота ниже
+<<<<<<< HEAD
 API_TOKEN = 'токен'
+=======
+API_TOKEN = 'token'
+>>>>>>> 247cdb473f6ce7d13ec04d9db67bf8d1d08e9914
 
 # Настроим логирование
 logging.basicConfig(level=logging.INFO)
@@ -30,4 +34,17 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     asyncio.run(main())
+=======
+    # Запускаем основной цикл через asyncio
+    asyncio.run(main())
+
+# INFO:aiogram.dispatcher:Start polling
+# Бот запущен и готов к работе...
+# INFO:aiogram.dispatcher:Run polling for bot @taggo12_belyaevanya_bot id=XXXXXXXXXX - 'ItemsBot'
+# Введите команду /start, чтобы начать общение.
+# INFO:aiogram.event:Update id=XXXXXXXXXX is handled. Duration 500 ms by bot id=XXXXXXXXXX
+# Привет! Я бот помогающий твоему здоровью.
+# INFO:aiogram.event:Update id=XXXXXXXXXX is handled. Duration 186 ms by bot id=XXXXXXXXXX
+>>>>>>> 247cdb473f6ce7d13ec04d9db67bf8d1d08e9914
