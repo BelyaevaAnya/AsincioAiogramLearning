@@ -5,7 +5,7 @@ from aiogram.types import Message
 import asyncio
 
 # Вставьте ваш токен бота ниже
-API_TOKEN = ''
+API_TOKEN = 'token'
 
 # Настроим логирование
 logging.basicConfig(level=logging.INFO)
@@ -14,6 +14,12 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 router = Router()
+
+
+@router.message(F.text == 'Печеньки')
+async def cookies_messages(message):
+    print(message.text.upper())
+    await message.answer(message.text.upper())
 
 
 # Функция для обработки команды /start
@@ -47,7 +53,7 @@ if __name__ == '__main__':
 
 # INFO:aiogram.dispatcher:Start polling
 # Бот запущен и готов к работе...
-# INFO:aiogram.dispatcher:Run polling for bot @taggo12_belyaevanya_bot id=XXXXXXXXXX - 'ItemsBot'
+# INFO:aiogram.dispatcher:Run polling for bot @_bot id=XXXXXXXXXX - 'ItemsBot'
 # Введите команду /start, чтобы начать общение.
 # INFO:aiogram.event:Update id=XXXXXXXXXX is handled. Duration 500 ms by bot id=XXXXXXXXXX
 # Привет! Я бот помогающий твоему здоровью.
