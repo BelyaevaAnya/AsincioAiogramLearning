@@ -30,9 +30,6 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
-<<<<<<< HEAD
-    asyncio.run(main())
-=======
     # Запускаем основной цикл через asyncio
     asyncio.run(main())
 
