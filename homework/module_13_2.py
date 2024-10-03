@@ -5,7 +5,7 @@ from aiogram.types import Message
 import asyncio
 
 # Вставьте ваш токен бота ниже
-API_TOKEN = '7779824271:AAHJ01L3be-L55ymfBc4STqtMB0d27q-U1U'
+API_TOKEN = 'token'
 
 # Настроим логирование
 logging.basicConfig(level=logging.INFO)
