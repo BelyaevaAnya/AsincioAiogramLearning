@@ -15,13 +15,6 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 router = Router()
 
-
-@router.message(F.text == 'Печеньки')
-async def cookies_messages(message):
-    print(message.text.upper())
-    await message.answer(message.text.upper())
-
-
 # Функция для обработки команды /start
 @router.message(Command("start"))
 async def start(message: Message):
