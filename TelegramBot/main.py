@@ -4,7 +4,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram import F
 import asyncio
 
-API_TOKEN = '7779824271:AAHJ01L3be-L55ymfBc4STqtMB0d27q-U1U'
+API_TOKEN = 'token'
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
